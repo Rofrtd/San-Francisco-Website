@@ -1,79 +1,114 @@
-body{
+body {
   background-color: black;
-  color:white;
+  color: white;
+}
 
-}
-header{
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-}
-.logo{
-  background-image:url(images/logo.jpg);
-  background-size: cover;
-  width: 500px;
-  height: 500px;
-  margin-top:-160px;
-}
-nav{
+.main-header {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-li{
-  list-style: none;
-  float: left;
-  width: 150px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 15px;
+.logo {
+  background-image: url(images/logo.png);
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  margin-top: -80px;
+
 }
 
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
-
-a:hover{
-color: grey;
-}
-
-.click{
-  width: center;
+.menu {
+  width: 100%;
   display: flex;
+  list-style-type: none;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
-#btn-menu{
+
+.menu > .menu-item > a {
+  display: block;
+  min-width: 140px;
+  height: 30px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+.menu > .menu-item > a:hover{
+  color: grey;
+}
+
+.toggle-menu {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+  cursor: pointer;
+
+}
+
+#toggle-menu-controller {
   display: none;
 }
 
-label{
-  display:none;
+.toggle-menu:hover{
+  color: grey;
 }
 
+#toggle-menu-controller:checked ~ .menu {
+  display: block;
 
-
-@media(max-width: 760px){
-.menu{
-  display:none;
-}
-.menu ul{
-  position: absolute;
-  width: 70%;
-  flex-direction: column;
-  margin-top: -70%;
 }
 
-label{
-zoom: 150%;
-display: flex;
-justify-content: center;
+@media screen and (max-width : 760px) {
+
+  .menu {
+    display: none;
+  }
+
+  .toggle-menu {
+    zoom:300%;
+    display: block;
+  }
 }
 
+.artista1{
+  background-image: url(images/artista1.jpg);
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 300px;
+  margin-top: 100px;
+}
+.artista1name{
+  margin-top: 30px;
+  text-align: center;
+}
 
-#btn-menu:checked ~ .menu ul {
-margin-top: 0px;
+.artista1bio{
+  text-align: center;
+}
+.artista2{
+  background-image: url(images/artista2.jpg);
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  margin-top: 100px;
+}
+
+.artista2name{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.artista2bio{
+  text-align: center;
 }
