@@ -9,28 +9,17 @@ body {
   justify-content: center;
 }
 
+.main-menu {
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
 .logo {
   background-image: url(images/logo.png);
   background-size: cover;
   width: 500px;
-  height: 500px;
+  height: 400px;
   margin-top: -80px;
-  margin-bottom: -80px;
 }
-
-/* Icones para as redes sociais do Estudio */
-/* .main-social-media {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.insta{
-  zoom: 16%;
-  margin-right: 50px
-}
-.face {
-  zoom: 10%;
-} */
 
 .menu {
   width: 100%;
@@ -91,120 +80,147 @@ body {
   }
 }
 
+
+.artistas{
+  width: 90%;
+  height: 90%;
+  margin: 30px;
+  justify-content: center;
+  margin-bottom: -300px;
+}
+
+
+.text{
+  float: left;
+  width: 70%;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.container-pic-social {
+  width: 25%;
+  float: left;
+}
 .artista1pic{
   background-image: url(images/artista1.jpg);
   background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 30px;
   width: 500px;
   height: 500px;
   margin-top: 100px;
   zoom: 50%;
-}
-.artista1name{
-  margin-top: 30px;
-  text-align: center;
+  border-radius: 100px;
 }
 
-.social-media-artist1 {
+
+.social-media {
   clear: both;
   display: flex;
-  justify-content: center;
+  width: 50%;
   margin-top: 5px;
+  margin-left: 110px;
 }
-.insta1 {
+.insta {
   zoom:16%;
 }
-.face1 {
+.face {
   zoom:10%;
 }
-.social-media-artist2 {
-  clear: both;
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-}
 
-
-.artista1bio{
-  text-align: center;
+.artista-bio{
+  margin-top: 20px;
 }
 .artista2pic{
   background-image: url(images/artista2.jpg);
   background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 200px;
+  margin-left: 30px;
+  width: 500px;
+  height: 500px;
   margin-top: 100px;
+  zoom: 50%;
+  border-radius: 100px;
 }
 
-.artista2name{
+.artista-name{
   margin-top: 30px;
   text-align: center;
 }
 
-.artista2bio{
-  text-align: center;
-}
-.insta2{
-  zoom: 16%
-}
-.face2 {
-  zoom:10%;
-}
 
 
-
-
-
-
-
-
-
-
-
-div.gallery {
-    margin-top: 30px;
-    border: 1px solid #ccc;
+.galeria{
+  clear: both;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
+.artista1-pic-galeria{
+  background-image: url(images/artista1.jpg);
+  background-size: cover;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 500px;
+  height: 500px;
+  margin-top: 100px;
+  zoom: 50%;
+  border-radius: 100px;
 }
 
-div.gallery img {
-    width: 100%;
-    height: auto;
+.artista2-pic-galeria{
+  background-image: url(images/artista2.jpg);
+  background-size: cover;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 500px;
+  height: 500px;
+  margin-top: 100px;
+  zoom: 50%;
+  border-radius: 100px;
+}
+
+
+.gallery {
+  border: 1px solid #ccc;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .responsive {
-    padding:  3px;
-    float: left;
-    width: 24.99999%;
+  padding:  3px;
+  float: left;
+  width: 24.99999%;
 }
 
 @media only screen and (max-width: 700px){
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
 }
 
 @media only screen and (max-width: 500px){
-    .responsive {
-        width: 100%;
-    }
+  .responsive {
+    width: 100%;
+  }
 }
 
 /* .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+content: "";
+display: table;
+clear: both;
 } */
 
 
