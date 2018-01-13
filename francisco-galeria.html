@@ -47,8 +47,10 @@
         function (response) {
           if (response && !response.error) {
             response.data.forEach(function(item){
+              console.log(response);
               var imageLinkS = item.images[4].source;
               var imageLinkL = item.images[0].source;
+
 
               var galleryItem1 = '<div class="responsive">\
               <div class="gallery">\
