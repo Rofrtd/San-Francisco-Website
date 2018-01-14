@@ -334,12 +334,12 @@ a{
   flex-direction: column;
   }
 
-.sobre_text{  /*Rick */
+.sobre_text{
   font-size: 15px;
   width: 90%;
 }
 
-.slider{     /*Rick */
+.slider{
   clear: both;
   width: 95%;
 }
@@ -368,7 +368,9 @@ a{
   margin-top: 150px;
 }
 footer{
-zoom:60%;
+zoom:65%;
 }
-
+.container_artista{
+  margin-bottom: 450px;
+}
 }
