@@ -277,7 +277,7 @@ background-size: cover;
   }
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 550px) {
 
   .logo{   /*Rick */
     margin-top: -40px;
