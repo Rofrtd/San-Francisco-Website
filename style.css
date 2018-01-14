@@ -264,6 +264,11 @@ background-size: cover;
   width: 24.99999%;
 }
 
+.map{
+  zoom: 30%;
+}
+
+
 @media only screen and (max-width: 700px){
   .responsive {
     width: 49.99999%;
@@ -311,16 +316,35 @@ background-size: cover;
 
 .sobre_text{  /*Rick */
   font-size: 15px;
-  width: 100%;
+  width: 90%;
 }
 
 .slider{     /*Rick */
   clear: both;
   width: 95%;
 }
+.galeria{
+  zoom:70%;
+}
+.container-artist{
+  margin-top: 70px;
+}
+.artista1-pic-galeria{
+  zoom:45%;
+  margin-left: 20px;
 }
 
-
+.artista2-pic-galeria{
+  zoom:45%;
+  margin-left: 20px;
+}
+#galeria{
+  margin-top: 150px;
+}
 .map{
-  zoom: 30%;
+  margin-top: 50px;
+}
+.container_map{
+  margin-top: 150px;
+}
 }
