@@ -263,12 +263,31 @@ background-size: cover;
   float: left;
   width: 24.99999%;
 }
-
+.container_map{
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+}
 .map{
   zoom: 30%;
 }
 
+footer{
+border-top: 2px solid white;
+width: 100%;
+display: flex;
+justify-content: center;
+}
 
+.footer_text{
+margin-top:5px;
+clear: both;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
 @media only screen and (max-width: 700px){
   .responsive {
     width: 49.99999%;
@@ -302,16 +321,17 @@ background-size: cover;
     margin-bottom: -70px;
   }
 
-.menu > .menu-item-active >a{ /*  Rick*/
+.menu > .menu-item-active >a{
   border-bottom: none;
 }
-  .container_text{      /* Rick*/
-  /* border: 2px solid red; */
+.menu > .menu-item-active >a:hover{
+  border-bottom: none;
+}
+  .container_text{
   display: flex;
   margin-left: -10px;
   margin-right: -10px;
   flex-direction: column;
-  /* background-color: darkgray; */
   }
 
 .sobre_text{  /*Rick */
@@ -347,4 +367,8 @@ background-size: cover;
 .container_map{
   margin-top: 150px;
 }
+footer{
+zoom:60%;
+}
+
 }
