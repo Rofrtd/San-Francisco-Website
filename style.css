@@ -13,12 +13,25 @@ body {
   margin-bottom: 100px;
   margin-top: 20px;
 }
+
+.menu > .menu-item-active >a {
+  display: block;
+  min-width: 140px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
 .logo {
   background-image: url(images/logo.png);
   background-size: cover;
-  width: 500px;
+  width: 400px;
   height: 400px;
   margin-top: -80px;
+  margin-bottom:-70px;
 }
 
 .menu {
@@ -35,13 +48,64 @@ body {
   min-width: 140px;
   height: 30px;
   text-align: center;
-  line-height: 50px;
+  line-height: 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   text-decoration: none;
 }
+
+.menu > .menu-item-active > a:hover{
+  color: grey;
+  border-bottom: 2px solid darkgrey;
+}
 .menu > .menu-item > a:hover{
   color: grey;
+}
+
+.container_text{      /* Rick*/
+/* border: 2px solid red; */
+clear: both;
+display: flex;
+margin-left: -10px;
+margin-right: -10px;
+flex-direction: row;
+justify-content: center;
+/* background-color: darkgray; */
+}
+.sobre_text{                   /* Rick*/
+/* border: 2px solid red; */
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+margin: 10px;
+width: 80%;
+padding: 15px;
+}
+
+.slider{        /*Rick */
+  background-image: url(images/e3.jpg);
+  background-size: cover;
+  margin: 10px;
+  width: 600px;
+  height:400px;
+  /* border: 2px solid red; */
+  animation: slide 40s infinite;
+  border-radius: 5%;
+
+}
+
+@keyframes slide {  /*Rick */
+
+33%{
+  background-image: url(images/e1.jpg);
+background-size: cover;
+  }
+33%{
+  background-image: url(images/e2.jpg);
+  background-size: cover;
+  }
+100%{
+  background-image: url(images/e3.jpg);
+  background-size: cover;
+  }
 }
 
 .toggle-menu {
@@ -52,7 +116,6 @@ body {
   padding: 10px 0;
   display: none;
   cursor: pointer;
-
 }
 
 #toggle-menu-controller {
@@ -65,20 +128,11 @@ body {
 
 #toggle-menu-controller:checked ~ .menu {
   display: block;
-
+  margin-top: 120px;
+  margin-bottom: -120px;
 }
 
-@media screen and (max-width : 760px) {
 
-  .menu {
-    display: none;
-  }
-
-  .toggle-menu {
-    zoom:300%;
-    display: block;
-  }
-}
 
 
 .artistas{
@@ -145,22 +199,28 @@ body {
   margin-top: 30px;
   text-align: center;
 }
-
-
+.artist-name{
+  text-align: center;
+  margin-bottom: -30px;
+}
+.container-artist{
+  width: 250px;
+  margin: auto;
+}
 
 .galeria{
   clear: both;
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 300px;
+  height: auto;
 }
 
 .artista1-pic-galeria{
   background-image: url(images/artista1.jpg);
   background-size: cover;
-  margin-left: 100px;
-  margin-right: 100px;
+  /* margin-left: 100px; */
+  /* margin-right: 100px; */
   width: 500px;
   height: 500px;
   margin-top: 100px;
@@ -171,8 +231,8 @@ body {
 .artista2-pic-galeria{
   background-image: url(images/artista2.jpg);
   background-size: cover;
-  margin-left: 100px;
-  margin-right: 100px;
+  /* margin-left: 100px;
+  margin-right: 100px; */
   width: 500px;
   height: 500px;
   margin-top: 100px;
@@ -217,18 +277,48 @@ body {
   }
 }
 
-/* .clearfix:after {
-content: "";
-display: table;
-clear: both;
-} */
+@media screen and (max-width : 600px) {
 
+  .logo{   /*Rick */
+    margin-top: -40px;
+    width: 300px;
+    height: 300px;
+    margin-bottom:-40px;
+  }
 
+  .menu {
+    display: none;
+  }
 
+  .toggle-menu {  /*Rick */
+    zoom:200%;
+    display: block;
+    margin-top: -20px;
+    margin-bottom: -70px;
+  }
 
+.menu > .menu-item-active >a{ /*  Rick*/
+  border-bottom: none;
+}
+  .container_text{      /* Rick*/
+  /* border: 2px solid red; */
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+  flex-direction: column;
+  /* background-color: darkgray; */
+  }
 
+.sobre_text{  /*Rick */
+  font-size: 15px;
+  width: 100%;
+}
 
-
+.slider{     /*Rick */
+  clear: both;
+  width: 95%;
+}
+}
 
 
 .map{

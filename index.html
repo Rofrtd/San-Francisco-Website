@@ -1,94 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>San Francisco Tattoo</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+    <head>
+      <title>San Francisco - Quem Somos</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" href="images/bLogo.ico"/>
+    </head>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <body>
+      <header class="main-header">
+        <a href="index.html"><div class="logo"></div></a>
+      </header>
 
-    <link rel="shortcut icon" href="images/bLogo.ico"/>
-
-    <style media="screen">
-
-      .jumbotron {
-        background-color: darkgrey;
-      }
-      body {
-        background-color: black;
-        color: white;
-      }
-
-      .container img {
-        display: block;
-      }
-      .nav {
-        margin: auto;
-        justify-content: center;
-      }
-      a {
-        color: white;
-      }
-      a:hover {
-        color: lightgrey;
-      }
-
-      .slide{
-        display: flex;
-        flex-direction: row;
-      }
-
-    </style>
-  </head>
-
+      <div class="main-menu">
+        <label for="toggle-menu-controller" class="toggle-menu">&#9776;</label>
+        <input type="checkbox" id="toggle-menu-controller" role="button">
+        <ul class="menu">
+          <li class="menu-item-active"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="artistas.html">Artistas</a></li>
+          <li class="menu-item"><a href="galeria.html">Galeria</a></li>
+          <li class="menu-item"><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <a href="index.html">
-            <img src="images/logo.png" height="250px" class="mx-auto" alt="Logo">
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-12">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="artistas.html">Artistas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="galeria.html">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  <!-- <header class="main-header">
-    <a href="index.html" style= 'color: grey'><div class="logo"></div></a>
-  </header> -->
-
-
-    <!-- <div class="main-menu">
-      <label for="toggle-menu-controller" class="toggle-menu">&#9776;</label>
-      <input type="checkbox" id="toggle-menu-controller" role="button">
-      <ul class="menu">
-        <li class="menu-item"></li>
-        <li class="menu-item"></li>
-        <li class="menu-item"></li>
-        <li class="menu-item"></li>
-      </ul>
-    </div> -->
-    <div class="container">
-      <div class="col-lg-6">
-        <div class="jumbotron">
+    <div class="container_text">
+    <div class="sobre_text">
           <p> A ideia San Francisco Tattoo surgiu em 2014, quando o fundador Francisco Santana começou sua jornada no mundo da tatuagem. Após algum tempo trabalhando em um estúdio na região, Francisco adquiriu certa experiência e resolveu abrir seu próprio espaço para melhor atender seus clientes e suas necessidades, visando sempre o espaço e conforto para os mesmos.<br>
 
         Em julho de 2016 esse sonho começou a tomar forma, tudo foi pensado e repensado, desde a pintura aos quadros.<br>
@@ -102,13 +38,9 @@
           SAN FRANCISCO TATTOO<br>
           FOR LOVE NOT FAME</p>
         </div>
+        <div class="slider">
 
-      <div class="slide">
-          <img src="images/logo.png" height="250px" alt="Logo">
+        </div>
       </div>
-    </div>
-  </div>
-
   </body>
-
 </html>
