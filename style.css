@@ -62,37 +62,34 @@ body {
   color: grey;
 }
 
-.container_text{      /* Rick*/
-/* border: 2px solid red; */
+.container_text{
+
 clear: both;
 display: flex;
 margin-left: -10px;
 margin-right: -10px;
 flex-direction: row;
 justify-content: center;
-/* background-color: darkgray; */
 }
-.sobre_text{                   /* Rick*/
-/* border: 2px solid red; */
+.sobre_text{
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 margin: 10px;
 width: 80%;
 padding: 15px;
 }
 
-.slider{        /*Rick */
+.slider{
   background-image: url(images/e3.jpg);
   background-size: cover;
   margin: 10px;
   width: 600px;
   height:400px;
-  /* border: 2px solid red; */
   animation: slide 40s infinite;
   border-radius: 5%;
 
 }
 
-@keyframes slide {  /*Rick */
+@keyframes slide {
 
 33%{
   background-image: url(images/e1.jpg);
@@ -132,15 +129,11 @@ background-size: cover;
   margin-bottom: -120px;
 }
 
-
-
-
 .artistas{
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 70%;
   margin: 30px;
   justify-content: center;
-  margin-bottom: -300px;
 }
 
 
@@ -149,10 +142,10 @@ background-size: cover;
   width: 70%;
   margin-top: 50px;
   margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 .container-pic-social {
-  width: 25%;
   float: left;
 }
 .artista1pic{
@@ -219,8 +212,6 @@ background-size: cover;
 .artista1-pic-galeria{
   background-image: url(images/artista1.jpg);
   background-size: cover;
-  /* margin-left: 100px; */
-  /* margin-right: 100px; */
   width: 500px;
   height: 500px;
   margin-top: 100px;
@@ -231,8 +222,6 @@ background-size: cover;
 .artista2-pic-galeria{
   background-image: url(images/artista2.jpg);
   background-size: cover;
-  /* margin-left: 100px;
-  margin-right: 100px; */
   width: 500px;
   height: 500px;
   margin-top: 100px;
@@ -263,7 +252,32 @@ background-size: cover;
   float: left;
   width: 24.99999%;
 }
+.container_map{
+  display: flex;
+  justify-content: left;
 
+}
+.map{
+  zoom: 30%;
+}
+
+footer{
+border-top: 2px solid white;
+width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 40px;
+}
+
+.footer_text{
+margin-top:5px;
+clear: both;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
 @media only screen and (max-width: 700px){
   .responsive {
     width: 49.99999%;
@@ -279,7 +293,7 @@ background-size: cover;
 
 @media screen and (max-width : 550px) {
 
-  .logo{   /*Rick */
+  .logo{
     margin-top: -40px;
     width: 300px;
     height: 300px;
@@ -290,37 +304,65 @@ background-size: cover;
     display: none;
   }
 
-  .toggle-menu {  /*Rick */
+  .toggle-menu {
     zoom:200%;
     display: block;
     margin-top: -20px;
     margin-bottom: -70px;
   }
 
-.menu > .menu-item-active >a{ /*  Rick*/
+.menu > .menu-item-active >a{
   border-bottom: none;
 }
-  .container_text{      /* Rick*/
-  /* border: 2px solid red; */
+.menu > .menu-item-active >a:hover{
+  border-bottom: none;
+}
+  .container_text{
   display: flex;
   margin-left: -10px;
   margin-right: -10px;
   flex-direction: column;
-  /* background-color: darkgray; */
   }
 
-.sobre_text{  /*Rick */
+.sobre_text{
   font-size: 15px;
-  width: 100%;
+  width: 90%;
 }
 
-.slider{     /*Rick */
+.slider{
   clear: both;
   width: 95%;
 }
+.galeria{
+  zoom:70%;
+}
+.container-artist{
+  margin-top: 70px;
+}
+.artista1-pic-galeria{
+  zoom:45%;
+  margin-left: 20px;
 }
 
-
+.artista2-pic-galeria{
+  zoom:45%;
+  margin-left: 20px;
+}
+#galeria{
+  margin-top: 150px;
+}
 .map{
-  zoom: 30%;
+  margin-top: 50px;
 }
+.container_map{
+  margin-top: 150px;
+}
+footer{
+zoom:65%;
+}
+/* .container_artista{
+  margin-bottom: 50px;
+  width: 500px;
+  height: 300px;
+  border: 10px solid red;
+} */
